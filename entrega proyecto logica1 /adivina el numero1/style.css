@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.juego {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    min-width: 600px;
+    z-index: 1;
+    background-color: rgb(255, 252, 51);
+}
+
+.pantallaDificultad {
+   display: flex;
+   flex-direction: column;
+   width: 40%;
+   min-width: 500px;
+   height: 50%;
+   background-color: rgb(49, 53, 76);
+   align-items: center;
+   justify-content: center;
+   border-radius: 20px;
+}
+
+.cambiarDificultadContainer {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.dificultad, .ganadas {
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cambiarDificultad {
+    top: 0;
+    right: 0;
+    z-index: 2;
+    margin: 5px 5px 5px 0;
+}
+
+h2 {
+    color: white;
+    font-size: 2.7rem;
+    margin-bottom: 15%;
+}
+
+.opcionDificultad {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin: 5px;
+    height: 60px;
+    width: 200px;
+    box-shadow: 2px 2px 2px 1px black;
+}
+
+button:hover {
+    background-color: rgb(78, 92, 171);
+    color: white;
+}
+button:active {
+    background-color: rgb(99, 112, 183);
+    scale: 0.98;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.textoDificultad, .numIngresado, .mayorMenor, .numIntentos, .textoGanadas {
+    color: rgb(47, 255, 89);
+    -webkit-text-stroke: 1px rgb(23, 154, 25);
+}
+
+h1 {
+    color: black;
+    font-size: 3.3rem;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+p, .mayorMenor {
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.numero{
+    text-align: center;
+    height: 25%;
+    min-height: 50px;
+    width: 25%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    appearance: none;
+    font-size: 7rem;
+    min-width: 200px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.alerta {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+}
+
+.pantallaAlerta {
+   display: flex;
+   flex-direction: column;
+   width: 20%;
+   min-width: 350px;
+   height: 20%;
+   background-color: rgb(49, 53, 76);
+   align-items: center;
+   justify-content: center;
+   border-radius: 20px;
+}
+
+.pantallaAlerta > p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#alertap {
+    text-align: center;
+    color: red;
+    font-size: 1.5rem;
+}
+
+.comprobar {
+    margin-bottom: 20px;
+}
+
+.penseContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.mayorMenor {
+    margin-left: 5px;
+}

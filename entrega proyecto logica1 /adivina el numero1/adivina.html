@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="juego">
+        <h1>¡Adivina el número!</h1>
+        <p>Estoy pensando un número del 1 al <span id="numMax">10</span>.</p>
+        <p>Ingresa un valor para comprobar si adivinaste:</p>
+        <input type="number" id="numero" class="numero" placeholder="?" min="1" max="100" focus>
+        <button id="comprobar" class="comprobar">Comprobar</button>
+        <p>Ingresaste el número <span class="numIngresado" id="numIngresado">-</span><span id="correctoNoCorrecto"></span></p>
+        <div class="penseContainer">
+            <p id="numeroPense">El número que pensé es</p><p class="mayorMenor" id="mayorMenor">-</p>
+        </div>
+        <p class="restantes" id="restantes">Te quedan <span class="numIntentos" id="numIntentos">6</span> intentos.</p>
+    </div>
+
+    <div class="cambiarDificultadContainer ganadasContainer">
+        <p class="dificultad">Dificultad: <span class="textoDificultad" id="textoDificultad">Fácil</span></p>
+        <p class="ganadas">Ganadas: <span class="textoGanadas" id="textoGanadas">0</span></p>
+    </div>
+
+    <div class="alerta" id="alerta">
+        <div class="pantallaAlerta">
+            <p class="alertap" id="alertap"></p>
+        </div>
+    </div>
+
+    <script src="scripits.js"></script>
+</body>
+</html>

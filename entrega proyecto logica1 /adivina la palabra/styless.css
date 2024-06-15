@@ -1,0 +1,126 @@
+/* Importa la fuente 'Open Sans' desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* Aplica a todos los elementos un box-sizing de border-box y la fuente 'Open Sans' */
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+/* Estilo del cuerpo (body) del documento */
+body {
+    /* Fondo con un degradado lineal de colores */
+    background: linear-gradient(#C39898 , #987070);
+    /* Altura de la ventana completa */
+    height: 100vh;
+    /* Flexbox para centrar contenido */
+    display: flex;
+    align-items: center;  /* Alinea verticalmente al centro */
+    justify-content: center;  /* Alinea horizontalmente al centro */
+}
+
+/* Estilo de la sección principal del contenido */
+section {
+    /* Ancho fijo de la sección */
+    width: 900px;
+    /* Fondo blanco */
+    background: #F1E5D1;
+    /* Borde sólido de 7px con color específico */
+    border: 7px solid #DBB5B5;
+    /* Espaciado interno de 7px */
+    padding: 7px;
+}
+
+/* Estilo de los encabezados de nivel 2 (h2) */
+h2 {
+    /* Línea inferior de borde */
+    border-bottom: 1px solid #9b58d1;
+    /* Texto centrado */
+    text-align: center;
+    /* Espaciado inferior de 5px */
+    padding-bottom: 5px;
+}
+
+/* Estilo del contenedor de la palabra a adivinar */
+#palabra {
+    /* Flexbox para alinear letras horizontalmente */
+    display: flex;
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    /* Margen vertical de 40px */
+    margin: 40px 0;
+}
+
+/* Estilo de cada letra de la palabra */
+.letra {
+    /* Tamaño fijo de cada letra */
+    height: 50px;
+    width: 50px;
+    /* Borde sólido de 2px con color específico */
+    border: 2px solid #DBB5B5;
+    /* Texto centrado */
+    text-align: center;
+    /* Margen de 4px entre letras */
+    margin: 4px;
+    /* Texto en negrita */
+    font-weight: bold;
+    /* Tamaño de fuente de 30px */
+    font-size: 30px;
+}
+
+/* Estilo para letras correctamente adivinadas */
+.pintar {
+    /* Fondo verde azulado */
+    background-color: green;
+}
+
+/* Estilo para letras incorrectamente adivinadas */
+.pintarError {
+    /* Fondo rojo */
+    background-color: red;
+}
+
+/* Estilo de los encabezados de nivel 3 (h3) */
+h3 {
+    /* Margen vertical de 4px */
+    margin: 4px 0;
+    /* Fuente con peso normal */
+    font-weight: normal;
+    /* Tamaño de fuente de 20px */
+    font-size: 20px;
+    
+}
+
+/* Estilo de los elementos span dentro de h3 */
+h3 span {
+    /* Fuente en cursiva */
+    font-style: italic;
+    /* Fuente en negrita */
+    font-weight: bold;
+    /* Tamaño de fuente de 22px */
+    font-size: 22px;
+}
+
+/* Estilo de los botones */
+button {
+    /* Bloque con ajuste de contenido */
+    display: block;
+    width: fit-content;
+    /* Margen automático para centrar */
+    margin: 10px auto;
+    /* Fondo verde azulado */
+    background-color: #02bfa4;
+    /* Texto blanco */
+    color: white;
+    /* Sin borde */
+    border: none;
+    /* Bordes redondeados */
+    border-radius: 20px;
+    /* Texto en negrita */
+    font-weight: bold;
+    /* Espaciado interno */
+    padding: 2px 10px;
+    /* Cambia el cursor a puntero cuando se pasa el mouse sobre el botón */
+    cursor: pointer;
+}
+
+
